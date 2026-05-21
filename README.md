@@ -105,42 +105,53 @@ Por otro lado, el tiempo y los relojes representan cómo la sociedad también co
 
 ## INPUT
 
-Los principales inputs del sistema son:
+Las principales entradas de información son:
 
-- Posición vertical del mouse (`mouseY`).
-- Click del mouse (`mousePressed`).
-- Posición del click dentro del triángulo rojo.
-- Generación aleatoria mediante `random()`.
+- La posición vertical del cursor (`mouseY`).
+- La acción de presionar el mouse (`mousePressed`).
+- La posición del click dentro o cerca del triángulo rojo interactivo.
+- Valores aleatorios generados mediante la función `random()`.
+- Variables de estado internas, como `etiquetaNegra` y `anguloReloj`.
+
 
 ---
 
-## ¿Cómo se procesan y transforman?
+## PROCESAMIENTO DEL SISTEMA
 
-El sistema procesa la información del usuario constantemente dentro del loop draw().
+La información ingresada es procesada continuamente dentro del loop draw().
 
-La posición del mouse modifica:
-- velocidad,
-- movimiento,
-- dirección,
-- separación visual del fondo,
-- y comportamiento de los relojes.
+El sistema traduce los inputs en transformaciones como: 
+- condicionales (`if / else`),
+- loops (`while` y `for`),
+- funciones propias,
+- variables de estado,
+- rotaciones,
+- escalas,
+- generación aleatoria,
+- y mapeos mediante `map()`.
 
-El click activa cambios de estado dentro de la etiqueta.
+La posición del mouse altera la velocidad y dirección de los relojes, además de modificar la intensidad del fondo Op Art. Esto genera una sensación visual de ansiedad y aceleración temporal.
 
-También cada vez que el usuario hace click, se genera un nuevo código de barras aleatorio, reforzando la idea de la mujer como producto serializado.
+El click del usuario cambia estados dentro del sistema. Cuando el click ocurre sobre el triángulo rojo, la etiqueta deja de operar como producto comercial y cambia a una lectura crítica mediante el mensaje “NO EN VENTA”.
+
+Paralelamente, cada click genera nuevos números aleatorios para el código de barras, reforzando la idea de serialización y reemplazo constante del cuerpo femenino.
 
 ---
 
 ## OUTPUT
 
-Las respuestas visuales producidas por el sistema son:
+El sistema produce distintos outputs visuales como respuesta a la interacción del usuario.
 
-- Aceleración de relojes.
-- Alteración del fondo Op Art.
-- Cambio de dirección del tiempo.
-- Cambio de etiqueta normal a etiqueta negra.
-- Generación de nuevos códigos de barras.
-- Cambio de mensajes y lectura conceptual del sistema.
+Entre las principales salidas visuales se encuentran:
+
+- Aceleración o inversión del movimiento de los relojes.
+- Alteración del fondo geométrico.
+- Transformación visual de la etiqueta.
+- Aparición del mensaje “NO EN VENTA”.
+- Generación constante de nuevos códigos de barras.
+- Cambios en la lectura conceptual de la obra según la interacción.
+
+De esta manera, el sistema transforma acciones simples del usuario en respuestas visuales que construyen una crítica hacia la cosificación femenina y la lógica de consumo aplicada sobre el cuerpo de la mujer.
 
 ---
 
