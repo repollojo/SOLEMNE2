@@ -148,8 +148,6 @@ Las respuestas visuales producidas por el sistema son:
 
 ## Reglas que gobiernan el sistema
 
-El sistema funciona mediante distintas reglas lógicas:
-
 - Si el mouse baja = el tiempo se acelera.
 - Si el mouse se presiona = los relojes cambian dirección.
 - Si el usuario hace click = se genera un nuevo código.
@@ -211,7 +209,15 @@ Una vez que tuve la idea principal del proyecto, el resto del sistema lo fui con
 
 # Diagrama de Flujo
 
-<img width="1001" height="6025" alt="SS" src="https://github.com/user-attachments/assets/41f97c9d-e3ad-49e5-b73c-a5e69d9c3ae4" />
+<img width="2238" height="12050" alt="ee" src="https://github.com/user-attachments/assets/4ec7a0f3-bda9-4d59-bd22-27715944f88e" />
+
+
+**Link a PDF de mejor calidad**
+
+[DIAGRAMA FLUJO.pdf](https://github.com/user-attachments/files/28117710/DIAGRAMA.FLUJO.pdf)
+
+
+
 
 
 
