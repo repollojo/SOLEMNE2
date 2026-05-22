@@ -103,55 +103,38 @@ Por otro lado, el tiempo y los relojes representan cómo la sociedad también co
 
 # Input / Output y sistema
 
-## INPUT
 
-Las principales entradas de información son:
+### INPUT
 
-- La posición vertical del cursor (`mouseY`).
-- La acción de presionar el mouse (`mousePressed`).
-- La posición del click dentro o cerca del triángulo rojo interactivo.
-- Valores aleatorios generados mediante la función `random()`.
-- Variables de estado internas, como `etiquetaNegra` y `anguloReloj`.
+Los inputs principales del sistema son:
 
-
----
-
-## PROCESAMIENTO DEL SISTEMA
-
-La información ingresada es procesada continuamente dentro del loop draw().
-
-El sistema traduce los inputs en transformaciones como: 
-- condicionales (`if / else`),
-- loops (`while` y `for`),
-- funciones propias,
-- variables de estado,
-- rotaciones,
-- escalas,
-- generación aleatoria,
-- y mapeos mediante `map()`.
-
-La posición del mouse altera la velocidad y dirección de los relojes, además de modificar la intensidad del fondo Op Art. Esto genera una sensación visual de ansiedad y aceleración temporal.
-
-El click del usuario cambia estados dentro del sistema. Cuando el click ocurre sobre el triángulo rojo, la etiqueta deja de operar como producto comercial y cambia a una lectura crítica mediante el mensaje “NO EN VENTA”.
-
-Paralelamente, cada click genera nuevos números aleatorios para el código de barras, reforzando la idea de serialización y reemplazo constante del cuerpo femenino.
+- Posición vertical del mouse (mouseY`), utilizada como dato continuo de interacción.
+- Presión del mouse (`mousePressed`), utilizada como activador de cambios de estado.
+- Posición exacta del click dentro del área triangular interactiva.
+- Valores aleatorios generados mediante la función `random()`, utilizados para variar los códigos de barras.
+- Variables integradas de p5.js como `width` y `height`, que permiten calcular posiciones, escalas y relaciones espaciales dentro del canvas.
 
 ---
 
-## OUTPUT
+### ¿Cómo se procesan y transforman?
 
-El sistema produce distintos outputs visuales como respuesta a la interacción del usuario.
+El sistema procesa los input. La posición vertical del mouse ('mouseY') se transforma en cambios de velocidad, movimiento y densidad visual, afectando principalmente el fondo Op Art y los relojes.
 
-Entre las principales salidas visuales se encuentran:
+El click funciona como un activador de estado: cuando el usuario presiona el triángulo rojo, el sistema verifica su posición mediante condicionales y cambia la etiqueta a su versión negra. Además, con cada interacción se genera un nuevo código de barras mediante `random()`.
 
-- Aceleración o inversión del movimiento de los relojes.
-- Alteración del fondo geométrico.
-- Transformación visual de la etiqueta.
-- Aparición del mensaje “NO EN VENTA”.
-- Generación constante de nuevos códigos de barras.
-- Cambios en la lectura conceptual de la obra según la interacción.
+---
 
-De esta manera, el sistema transforma acciones simples del usuario en respuestas visuales que construyen una crítica hacia la cosificación femenina y la lógica de consumo aplicada sobre el cuerpo de la mujer.
+### OUTPUT
+
+Las respuestas visuales son
+
+- Variación en la velocidad de rotación de los relojes.
+- Cambio en la dirección del movimiento de los relojes.
+- Alteración del fondo Op Art.
+- Cambio de estado de la etiqueta a una negra.
+- Aparición de nuevos códigos de barras generados aleatoriamente.
+- Transformación de textos y mensajes presentes en pantalla.
+
 
 ---
 
