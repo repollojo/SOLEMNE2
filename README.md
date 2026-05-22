@@ -108,11 +108,11 @@ Por otro lado, el tiempo y los relojes representan cómo la sociedad también co
 
 Los inputs principales del sistema son:
 
-- Posición vertical del mouse (mouseY`), utilizada como dato continuo de interacción.
-- Presión del mouse (`mousePressed`), utilizada como activador de cambios de estado.
-- Posición exacta del click dentro del área triangular interactiva.
+- Posición vertical del mouse (mouseY`).
+- Presión del mouse (`mousePressed`), utilizada como activador de "cambios".
+- Posición del click dentro del área triangular.
 - Valores aleatorios generados mediante la función `random()`, utilizados para variar los códigos de barras.
-- Variables integradas de p5.js como `width` y `height`, que permiten calcular posiciones, escalas y relaciones espaciales dentro del canvas.
+- Variables integradas de p5.js como `width` y `height`, que permiten calcular posiciones y escalas.
 
 ---
 
