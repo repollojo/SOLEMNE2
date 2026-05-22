@@ -348,7 +348,6 @@ function draw() { // función que se repite constantemente en loop
 
   // IMÁGENES
 
-  tint(255); // deja las imágenes con su color normal
   image(maniqui1, 0, 300, 210, 310); // dibuja la primera imagen en x 0, y 300, con ancho 210 y alto 310
   image(maniqui2, 350, 30, 140, 220); // dibuja la segunda imagen en x 350, y 30, con ancho 140 y alto 220
 
